@@ -1,0 +1,167 @@
+
+==================== FINAL INTERFACE ====================
+2015-10-07 19:19:51.988071 UTC
+
+interface main:Main 7084
+  interface hash: fcb057cadb33ad96e887d63435d9d013
+  ABI hash: a5df52a9e87efd8e677e6df5a81f0d74
+  export-list hash: 39db3927375827586527247ec390566d
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 587f091cba6e2f2370e138dc178b09da
+  used TH splices: False
+  where
+exports:
+  Main.addTwo
+  Main.main
+module dependencies:
+package dependencies: base* ghc-prim integer-gmp ppTwoOne-0.1.0.0
+orphans: base:GHC.Base base:GHC.Float base:GHC.Real
+family instance modules: base:Data.Either base:Data.Monoid
+                         base:Data.Type.Equality base:GHC.Generics
+import  -/  base:GHC.Num 5e7786970581cacc802bf850d458a30b
+import  -/  base:GHC.Show cf1a7ff9edb0f41528085aad04d33753
+import  -/  base:Prelude 74043f272d60acec1777d3461cfe5ef4
+import  -/  base:System.IO c6fad23f27375c01895a06511f1cc2a0
+import  -/  ghc-prim:GHC.Types dcba736fa3dfba12d307ab18354845d2
+import  -/  ppTwoOne-0.1.0.0:Lib af57afce5e905c9074f4de9c0775742f
+d81c1613a218223b574d231936577d09
+  addTwo :: GHC.Types.Int -> GHC.Types.Int -> GHC.Types.Int
+    {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U)><S,1*U(U)>m,
+       Unfolding: InlineRule (0, True, True) GHC.Num.$fNumInt_$c+ -}
+a90935006e3ebf3881b032b5f36a7d23
+  main :: GHC.Types.IO ()
+    {- Arity: 1, Strictness: <L,U>,
+       Unfolding: (Main.main1
+                     `cast`
+                   (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
+c89c6f2794fd4a7eeee63ac9de9f6719
+  main1 :: GHC.Prim.State# GHC.Prim.RealWorld
+           -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+    {- Arity: 1, Strictness: <L,U>,
+       Unfolding: (\ eta :: GHC.Prim.State# GHC.Prim.RealWorld ->
+                   case GHC.IO.Handle.Text.hPutStr2
+                          GHC.IO.Handle.FD.stdout
+                          Main.main4
+                          GHC.Types.True
+                          eta of ds1 { (#,#) ipv ipv1 ->
+                   case GHC.IO.Handle.Internals.wantReadableHandle_1
+                          @ GHC.Base.String
+                          GHC.IO.Handle.Text.hGetLine3
+                          GHC.IO.Handle.FD.stdin
+                          GHC.IO.Handle.Text.hGetLine2
+                            `cast`
+                          (<GHC.IO.Handle.Types.Handle__>_R
+                           ->_R Sym (GHC.Types.NTCo:IO[0] <GHC.Base.String>_R))
+                          ipv of ds2 { (#,#) ipv2 ipv3 ->
+                   case System.IO.readLn2
+                          @ GHC.Types.Int
+                          (Text.ParserCombinators.ReadP.run
+                             @ GHC.Types.Int
+                             Main.main3
+                             ipv3) of wild {
+                     []
+                     -> case (GHC.IO.Exception.ioError
+                                @ GHC.Types.Int
+                                System.IO.readIO4)
+                               `cast`
+                             (GHC.Types.NTCo:IO[0] <GHC.Types.Int>_R)
+                               ipv2
+                        ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                        of {}
+                     : x ds
+                     -> case ds of wild1 {
+                          []
+                          -> case GHC.IO.Handle.Text.hPutStr2
+                                    GHC.IO.Handle.FD.stdout
+                                    Main.main2
+                                    GHC.Types.True
+                                    ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                             case GHC.IO.Handle.Internals.wantReadableHandle_1
+                                    @ GHC.Base.String
+                                    GHC.IO.Handle.Text.hGetLine3
+                                    GHC.IO.Handle.FD.stdin
+                                    GHC.IO.Handle.Text.hGetLine2
+                                      `cast`
+                                    (<GHC.IO.Handle.Types.Handle__>_R
+                                     ->_R Sym (GHC.Types.NTCo:IO[0] <GHC.Base.String>_R))
+                                    ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                             case System.IO.readLn2
+                                    @ GHC.Types.Int
+                                    (Text.ParserCombinators.ReadP.run
+                                       @ GHC.Types.Int
+                                       Main.main3
+                                       ipv7) of wild2 {
+                               []
+                               -> case (GHC.IO.Exception.ioError
+                                          @ GHC.Types.Int
+                                          System.IO.readIO4)
+                                         `cast`
+                                       (GHC.Types.NTCo:IO[0] <GHC.Types.Int>_R)
+                                         ipv6
+                                  ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                                  of {}
+                               : x1 ds5
+                               -> case ds5 of wild3 {
+                                    []
+                                    -> GHC.IO.Handle.Text.hPutStr2
+                                         GHC.IO.Handle.FD.stdout
+                                         (case x of wild4 { GHC.Types.I# x2 ->
+                                          case x1 of wild5 { GHC.Types.I# y ->
+                                          case GHC.Show.$wshowSignedInt
+                                                 0
+                                                 (GHC.Prim.+# x2 y)
+                                                 (GHC.Types.[]
+                                                    @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                                          GHC.Types.: @ GHC.Types.Char ww5 ww6 } } })
+                                         GHC.Types.True
+                                         ipv6
+                                    : ipv8 ipv9
+                                    -> case (GHC.IO.Exception.ioError
+                                               @ GHC.Types.Int
+                                               System.IO.readIO2)
+                                              `cast`
+                                            (GHC.Types.NTCo:IO[0] <GHC.Types.Int>_R)
+                                              ipv6
+                                       ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                                       of {} } } } }
+                          : ipv4 ipv5
+                          -> case (GHC.IO.Exception.ioError
+                                     @ GHC.Types.Int
+                                     System.IO.readIO2)
+                                    `cast`
+                                  (GHC.Types.NTCo:IO[0] <GHC.Types.Int>_R)
+                                    ipv2
+                             ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                             of {} } } } }) -}
+cc180bf2a0fa1afb16d32a3fcb06f8c7
+  main2 :: [GHC.Types.Char]
+    {- Unfolding: (GHC.CString.unpackCString#
+                     "Enter another integer: "#) -}
+7969dc1c81f2e92a0af621cd8b1410ca
+  main3 :: Text.ParserCombinators.ReadP.P GHC.Types.Int
+    {- Unfolding: (GHC.Read.$fReadInt4
+                     GHC.Read.$fReadInt_$sconvertInt
+                     Text.ParserCombinators.ReadPrec.minPrec
+                     @ GHC.Types.Int
+                     (Text.ParserCombinators.ReadP.$fMonadP_$creturn
+                        @ GHC.Types.Int)) -}
+4c88ac5cf25906eb592cbe83fea80565
+  main4 :: [GHC.Types.Char]
+    {- Unfolding: (GHC.CString.unpackCString# "Enter an integer: "#) -}
+1af4ccc03950a0504975bcf778f4871b
+  main5 :: GHC.Prim.State# GHC.Prim.RealWorld
+           -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+    {- Arity: 1, Strictness: <L,U>,
+       Unfolding: (\ eta :: GHC.Prim.State# GHC.Prim.RealWorld ->
+                   GHC.TopHandler.runMainIO1
+                     @ ()
+                     Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))
+                     eta) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe-inferred
+require own pkg trusted: False
+

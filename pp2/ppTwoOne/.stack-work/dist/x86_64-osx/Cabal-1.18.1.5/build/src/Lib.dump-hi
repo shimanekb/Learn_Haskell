@@ -1,0 +1,49 @@
+
+==================== FINAL INTERFACE ====================
+2015-10-07 18:55:37.758818 UTC
+
+interface ppTwoOne-0.1.0.0:Lib 7084
+  interface hash: 98bb11f14fb3c346538ea4f035b828f7
+  ABI hash: af57afce5e905c9074f4de9c0775742f
+  export-list hash: acb884c177cde7cbd48313337aa9f722
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 608f35714590cca34a049b235784a4ae
+  used TH splices: False
+  where
+exports:
+  Lib.someFunc
+module dependencies:
+package dependencies: base* ghc-prim integer-gmp
+orphans: base:GHC.Base base:GHC.Float base:GHC.Real
+family instance modules: base:Data.Either base:Data.Monoid
+                         base:Data.Type.Equality base:GHC.Generics
+import  -/  base:Prelude 74043f272d60acec1777d3461cfe5ef4
+import  -/  base:System.IO c6fad23f27375c01895a06511f1cc2a0
+import  -/  ghc-prim:GHC.Types dcba736fa3dfba12d307ab18354845d2
+577af0662b9527a8a6f921f5c2b722df
+  someFunc :: GHC.Types.IO ()
+    {- Arity: 1, Strictness: <L,U>,
+       Unfolding: (Lib.someFunc1
+                     `cast`
+                   (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
+2728f3b7790986c5bcd8fea6c15dfdd3
+  someFunc1 :: GHC.Prim.State# GHC.Prim.RealWorld
+               -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+    {- Arity: 1, Strictness: <L,U>,
+       Unfolding: (\ eta :: GHC.Prim.State# GHC.Prim.RealWorld ->
+                   GHC.IO.Handle.Text.hPutStr2
+                     GHC.IO.Handle.FD.stdout
+                     Lib.someFunc2
+                     GHC.Types.True
+                     eta) -}
+3fa0e31578b45b26a2020738ff37ba49
+  someFunc2 :: [GHC.Types.Char]
+    {- Unfolding: (GHC.CString.unpackCString# "someFunc"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe-inferred
+require own pkg trusted: False
+
