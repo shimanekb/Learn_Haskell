@@ -1,0 +1,34 @@
+
+==================== FINAL INTERFACE ====================
+2015-10-08 18:20:26.842042 UTC
+
+interface ppTwoTwo-0.1.0.0:Lib 7084
+  interface hash: 4aaebd7e9ab6c4eaa2932364ff59c502
+  ABI hash: b6cc08977f86de63e24ea1b069aeba51
+  export-list hash: a523ae9c833b928d40e95480287ff079
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 608f35714590cca34a049b235784a4ae
+  used TH splices: False
+  where
+exports:
+  Lib.mySort
+module dependencies:
+package dependencies: base* ghc-prim integer-gmp
+orphans: base:GHC.Base base:GHC.Float base:GHC.Real
+family instance modules: base:Data.Either base:Data.Monoid
+                         base:Data.Type.Equality base:GHC.Generics
+import  -/  base:Data.List 8b77870d02d66076337587b759b7ee19
+import  -/  base:Prelude 74043f272d60acec1777d3461cfe5ef4
+7c115d9426be69234c1eb3038576fd62
+  mySort :: [GHC.Types.Int] -> [GHC.Types.Int]
+    {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+       Unfolding: (\ xs :: [GHC.Types.Int] ->
+                   Data.List.sortBy @ GHC.Types.Int GHC.Classes.compareInt xs) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe-inferred
+require own pkg trusted: False
+
